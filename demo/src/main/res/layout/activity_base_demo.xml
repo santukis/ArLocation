@@ -6,7 +6,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.david.demo.BaseDemoActivity">
+    tools:context="com.david.demo.DemoActivity">
 
 
     <TextureView
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.david.arlocation.view.views.IconsView
+    <com.david.arlocation.view.views.MarkersView
         android:id="@+id/iconsView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

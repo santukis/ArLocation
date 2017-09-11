@@ -11,18 +11,18 @@ import android.view.TextureView;
 
 import com.david.arlocation.aritem.boundary.ArManager;
 import com.david.arlocation.aritem.manager.DefaultArManager;
-import com.david.arlocation.view.views.IconsView;
+import com.david.arlocation.view.views.MarkersView;
 import com.david.arlocation.view.views.RadarView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class BaseDemoActivity extends AppCompatActivity {
+public class DemoActivity extends AppCompatActivity {
 
     private static final int MULTIPLE_PERMISSIONS_REQUEST_CODE = 1;
 
     @BindView(R.id.textureView) TextureView textureView;
-    @BindView(R.id.iconsView) IconsView<Place> iconsView;
+    @BindView(R.id.iconsView) MarkersView<Place> markersView;
     @BindView(R.id.radarView) RadarView<Place> radarView;
 
     ArManager<Place> arManager;
@@ -45,7 +45,7 @@ public class BaseDemoActivity extends AppCompatActivity {
         arManager = new DefaultArManager<>(
                 this,
                 textureView,
-                iconsView,
+                markersView,
                 radarView);
     }
 
